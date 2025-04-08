@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="">
+<head>
+    <title>XML Viewer</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        pre {
+            background: #f8f8f8;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Data (Raw XML)</h1>
+    <pre th:text="${xmlData} ?: 'No data available'"></pre>
+</body>
+</html>
